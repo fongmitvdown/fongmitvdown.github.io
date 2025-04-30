@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FongMi影视 OK版 Pro版官方下载 - 基于猫影视开源 简洁强大的智能电视软件</title>
+    <meta name="description" content="FongMi影视/OK影视是基于猫影视开源的CatVodTVJarLoader项目，界面简洁清爽，功能强大，支持点播、直播、DLNA投屏、语音搜索等多种功能，只需配置接口即可使用。">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <style>
+        :root {
+            --primary-color: #4caf50; /* Changed primary color for FongMi影视 theme (green) */
+            --secondary-color: #f5f5f5;
+            --accent-color: #388e3c; /* Changed accent color */
+        }
+        .hero-section {
+            /* TODO: Replace with a relevant background image for FongMi影视 */
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://pic1.imgdb.cn/item/67c0250dd0e0a243d40719a1.jpg');
+            background-position: center center;
+            background-size: cover;
+            color: white;
+            padding: 120px 0;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .testimonial-card {
+            border-left: 4px solid var(--primary-color);
+        }
+        .download-section {
+            background-color: var(--secondary-color);
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-primary:hover {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+        .btn-outline-light:hover {
+            color: var(--primary-color);
+        }
+        .feature-box {
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .danmu-animation {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.8);
+            margin-bottom: 20px;
+        }
+        .danmu-text {
+            position: absolute;
+            white-space: nowrap;
+            color: white;
+            font-size: 14px;
+            animation: danmu 15s linear infinite;
+        }
+        @keyframes danmu {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+        .anime-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            background-color: rgba(76, 175, 80, 0.1);
+            color: var(--primary-color);
+            margin-right: 8px;
+            margin-bottom: 8px;
+            font-size: 14px;
+            border: 1px solid var(--primary-color);
+        }
+        .feature-category {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            display: block;
+            font-size: 1.1rem;
+        }
+        .feature-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .feature-list li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .feature-list li i {
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">FongMi影视/OK影视</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">应用介绍</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">应用特点</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#download">立即下载</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">FongMi影视/OK影视 - 简洁强大的智能电视软件</h1>
+            <p class="lead mb-5">基于猫影视开源的CatVodTVJarLoader项目<br>简洁清爽的界面，强大的点播直播功能</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#download" class="btn btn-primary btn-lg px-4 py-2">立即下载</a>
+                <a href="#features" class="btn btn-outline-light btn-lg px-4 py-2">了解特点</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <!-- TODO: Replace with a relevant image for FongMi影视 -->
+                    <img src="https://tu.yedimifeng.com/images/2024/12/12/9bedb4c2ae2ff172fab9b3f667d86d42.png" alt="FongMi影视界面预览" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">FongMi影视/OK影视 APP介绍</h2>
+                    <p class="lead">FongMi影视/OK影视是基于猫影视开源的CatVodTVJarLoader项目，从零开始打造。</p>
+                    <p class="mb-4">界面上采用Android TV Leanback架构，播放器采用最新版EXO及IJK开源专案，非常简洁清爽且功能强大。使用体验感舒适，支持电视直播功能，界面没有花里胡哨的内容，用户只需要配置相关地址（接口）就可以使用。</p>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">核心优势</h5>
+                        <span class="anime-badge">猫影视开源</span>
+                        <span class="anime-badge">简洁清爽</span>
+                        <span class="anime-badge">功能强大</span>
+                        <span class="anime-badge">点播直播</span>
+                        <span class="anime-badge">DLNA投屏</span>
+                        <span class="anime-badge">语音搜索</span>
+                        <span class="anime-badge">EXO播放器</span>
+                        <span class="anime-badge">软硬解支持</span>
+                        <span class="anime-badge">配置灵活</span>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-tv text-success me-2"></i>
+                        <span>基于猫影视开源的CatVodTVJarLoader项目</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-feather-alt text-success me-2"></i>
+                        <span>界面简洁清爽，没有花里胡哨的内容</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-cogs text-success me-2"></i>
+                        <span>只需配置相关接口地址即可使用</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-play-circle text-success me-2"></i>
+                        <span>支持点播、直播等多种功能</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">应用特点</h2>
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-md-6">
+                    <div class="card feature-box border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-film feature-icon"></i>
+                                <h4 class="card-title fw-bold">点播功能</h4>
+                            </div>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i>内置聚合解析</li>
+                                <li><i class="fas fa-check-circle"></i>支持语音搜索</li>
+                                <li><i class="fas fa-check-circle"></i>支持DLNA投屏</li>
+                                <li><i class="fas fa-check-circle"></i>支持HTTP/3协议</li>
+                                <li><i class="fas fa-check-circle"></i>支持略过广告切片</li>
+                                <li><i class="fas fa-check-circle"></i>支持邻近装置互动</li>
+                                <li><i class="fas fa-check-circle"></i>轨道切换自动记忆</li>
+                                <li><i class="fas fa-check-circle"></i>片头片尾快捷标记</li>
+                                <li><i class="fas fa-check-circle"></i>刷新、重播一键切换</li>
+                                <li><i class="fas fa-check-circle"></i>自动换线路，换站源</li>
+                                <li><i class="fas fa-check-circle"></i>收藏的影片可自动切换至该接口</li>
+                                <li><i class="fas fa-check-circle"></i>採用最新EXO播放器支持软硬解</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card feature-box border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-broadcast-tower feature-icon"></i>
+                                <h4 class="card-title fw-bold">直播功能</h4>
+                            </div>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i>配置可设定EPG地址</li>
+                                <li><i class="fas fa-check-circle"></i>配置可设定IJK、EXO播放器</li>
+                                <li><i class="fas fa-check-circle"></i>配置可设定启动App进入直播</li>
+                                <li><i class="fas fa-check-circle"></i>支持p2p~p9p、mitv、zlive、tvbus等特殊协议</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download-section py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">立即下载 FongMi影视/OK影视</h2>
+            <p class="lead mb-5">最新官方版本<br>体验简洁清爽、功能强大的智能电视软件</p>
+            <!-- TODO: Update download links if available -->
+            <a href="https://tvbox-blw.pages.dev" class="btn btn-primary btn-lg px-5 py-3 me-3 mb-3"><i class="fas fa-download me-2"></i>官方下载</a>
+            <a href="https://tvbox-blw.pages.dev" class="btn btn-secondary btn-lg px-5 py-3 mb-3"><i class="fab fa-android me-2"></i>备用下载</a>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 FongMi影视/OK影视. All Rights Reserved.</p>
+            <!-- Optional: Add disclaimer or contact info -->
+            <p class="small text-muted mt-1">本站仅提供应用介绍，下载资源来自互联网，如有侵权请联系删除。</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
